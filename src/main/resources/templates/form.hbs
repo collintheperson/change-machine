@@ -1,0 +1,19 @@
+{{#partial "title" }}
+    How much Change ?
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+    <h1>How much money do you have?</h1>
+    <form action='/changeout.hbs'>
+        <div class="form-group">
+            <label for="totalCash">Enter how much cash you need change for? (under $8.20)</label>
+            <input id="totalCash" name="totalCash" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Go!</button>
+    </form>
+    <!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
